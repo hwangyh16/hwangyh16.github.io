@@ -136,12 +136,6 @@ p{
 	padding: 1%;
 }
 
-.package{
-	display: flex;
-	flex-wrap: wrap;
-	font-size: 0;
-}
-
 img{
 	opacity:0.13;
 	cursor:pointer;
@@ -164,31 +158,31 @@ img{
 }
 
 @media screen and (min-width: 300px){
-	.package li{
+	.infiniteScroll li{
 		width:33%;
 	}
 }
 
 @media screen and (min-width: 600px){
-	.package li{
+	.infiniteScroll li{
 		width:25%;
 	}
 }
 
 @media screen and (min-width: 800px){
-	.package li{
+	.infiniteScroll li{
 		width: 20%;
 	}
 }
 
 @media screen and (min-width: 1200px){
-	.package li{
+	.infiniteScroll li{
 		width: 16.5% ;
 	}
 }
 
 @media screen and (min-width: 1500px){
-	.package li{
+	.infiniteScroll li{
 		width: 12.5% ;
 	}
 }
