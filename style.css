@@ -56,7 +56,6 @@ html {
 
 img,
 video {
-
 }
 
 iframe {
@@ -81,7 +80,7 @@ body{
 }
 
 body::-webkit-scrollbar { 
-    display: none; 
+	display: none; 
 }
 
 .info{
@@ -112,14 +111,10 @@ p{
 	right: 10px;
 	bottom: 10px;
 	
-	display: flex;
-	justify-content: center;
-	align-items:center;
-	
 	width: 40px;
-    height: 40px;
+	height: 40px;
 
-    cursor:pointer;
+	cursor:pointer;
 }
 
 .z{
