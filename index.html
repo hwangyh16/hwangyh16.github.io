@@ -111,9 +111,10 @@
 			$('#a1').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
 		}else if($("#a1").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#a1)').addClass('bigger'); // #a1를 가진 li에 .bigger를 추가한다
-			$('#a1').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
+			
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
 			$('li:has(#a1)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
+			$('#a1').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else{ //이 모든 경우가 아니고 처음 클릭한다면
 			$('#a1,#a5,#a8,#a12,#a16,#a20,#a22').addClass('clicked1'); //이미지에 clicked1을 추가한다.
 		}
