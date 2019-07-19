@@ -144,13 +144,7 @@ p{
 
 img{
 	opacity:0.13;
-
-.bigger{
-	display: flex;
-  	justify-content: flex-end;
-  	align-items: flex-end;
-  	position: relative;	
-	width:290%;
+	cursor:pointer;
 }
 
 .clicked1{
