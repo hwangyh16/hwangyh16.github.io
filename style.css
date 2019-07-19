@@ -119,11 +119,9 @@ p{
 	cursor:pointer;
 }
 
-.z{
-	z-index:-2;
-}
-
 .infiniteScroll { 
+	display: flex;
+	flex-wrap: wrap;
 	font-size:0;
 	padding:1%;
 }
@@ -155,6 +153,10 @@ img{
 
 .bigger{
 	width:33vw !important;
+}
+
+.z{
+	z-index:-2;
 }
 
 @media screen and (min-width: 300px){
