@@ -119,14 +119,14 @@ p{
 	cursor:pointer;
 }
 
-.infiniteScroll { 
+.contents { 
 	display: flex;
 	flex-wrap: wrap;
 	font-size:0;
 	padding:1%;
 }
 
-.infiniteScroll li {
+.contents li {
 	display: flex;
   	justify-content: flex-end;
   	align-items: flex-end;
@@ -160,31 +160,31 @@ img{
 }
 
 @media screen and (min-width: 300px){
-	.infiniteScroll li{
+	.contents li{
 		width:33%;
 	}
 }
 
 @media screen and (min-width: 600px){
-	.infiniteScroll li{
+	.contents li{
 		width:25%;
 	}
 }
 
 @media screen and (min-width: 800px){
-	.infiniteScroll li{
+	.contents li{
 		width: 20%;
 	}
 }
 
 @media screen and (min-width: 1200px){
-	.infiniteScroll li{
+	.contents li{
 		width: 16.5% ;
 	}
 }
 
 @media screen and (min-width: 1500px){
-	.infiniteScroll li{
+	.contents li{
 		width: 12.5% ;
 	}
 }
