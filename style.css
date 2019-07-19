@@ -142,6 +142,9 @@ p{
 	font-size: 0;
 }
 
+img{
+	opacity:0.13;
+
 .bigger{
 	display: flex;
   	justify-content: flex-end;
