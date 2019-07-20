@@ -240,15 +240,15 @@
 	
 	$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(this)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
-			$(this).removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
+		}else if($('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li:has(#furiosa001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
+			$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(this)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
+			$('li:has(#furiosa001)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
 		}else{ //이 모든 경우가 아니고 처음 클릭한다면
 			$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked1'); //이미지에 clicked1을 추가한다.
 		}
@@ -256,11 +256,11 @@
 
 	$('#abby001,#abby002').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#abby001,#abby002').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#abby001,#abby002').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#abby001,#abby002').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#abby001,#abby002').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		}else if($('#abby001,#abby002').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#abby001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#abby001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
@@ -272,11 +272,11 @@
 	
 	$('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		}else if($('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#katniss001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#katniss001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
@@ -288,11 +288,11 @@
 			
 	$('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		}else if($('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#nausicaa001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#katniss001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
@@ -304,11 +304,11 @@
 			
 	$('#wasp001,#wasp002,#wasp003,#wasp004').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#wasp001,#wasp002,#wasp003,#wasp004').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#wasp001,#wasp002,#wasp003,#wasp004').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#wasp001,#wasp002,#wasp003,#wasp004').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#wasp001,#wasp002,#wasp003,#wasp004').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		}else if($('#wasp001,#wasp002,#wasp003,#wasp004').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#wasp001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#wasp001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
@@ -320,11 +320,11 @@
 			
 	$('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		}else if($('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#marvel001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#marvel001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
@@ -336,11 +336,11 @@
 			
 	$('#eleven001,#eleven002,#eleven003,#eleven004').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#eleven001,#eleven002,#eleven003,#eleven004').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#eleven001,#eleven002,#eleven003,#eleven004').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#eleven001,#eleven002,#eleven003,#eleven004').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#eleven001,#eleven002,#eleven003,#eleven004').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		}else if($('#eleven001,#eleven002,#eleven003,#eleven004').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#eleven001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#eleven001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
@@ -352,11 +352,11 @@
 			
 	$('#helen001,#helen002,#helen003').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#helen001,#helen002,#helen003').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#helen001,#helen002,#helen003').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#helen001,#helen002,#helen003').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#helen001,#helen002,#helen003').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		}else if($('#helen001,#helen002,#helen003').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#helen001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#helen001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
@@ -368,11 +368,11 @@
 			
 	$('#ladybird001,#ladybird002').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#ladybird001,#ladybird002').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#ladybird001,#ladybird002').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#ladybird001,#ladybird002').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#ladybird001,#ladybird002').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		}else if($('#ladybird001,#ladybird002').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#ladybird001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#ladybird001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
@@ -384,11 +384,11 @@
 			
 	$('#laura001,#laura002,#laura003').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#laura001,#laura002,#laura003').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#laura001,#laura002,#laura003').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#laura001,#laura002,#laura003').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#laura001,#laura002,#laura003').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		}else if($('#laura001,#laura002,#laura003').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#laura001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#laura001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
@@ -400,11 +400,11 @@
 			
 	$('#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		}else if($('#rey001,#rey002,#rey003,#rey004,#rey005,#rey006,#rey007,#rey008').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#rey001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#rey001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
@@ -416,11 +416,11 @@
 			
 	$('#ghost001,#ghost002,#ghost003').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#ghost001,#ghost002,#ghost003').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#ghost001,#ghost002,#ghost003').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#ghost001,#ghost002,#ghost003').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#ghost001,#ghost002,#ghost003').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		}else if($('#ghost001,#ghost002,#ghost003').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#ghost001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#ghost001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
@@ -432,11 +432,11 @@
 			
 	$('#roma001,#roma002,#roma003,#roma004').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#roma001,#roma002,#roma003,#roma004').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#roma001,#roma002,#roma003,#roma004').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#roma001,#roma002,#roma003,#roma004').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#roma001,#roma002,#roma003,#roma004').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		}else if($('#roma001,#roma002,#roma003,#roma004').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#roma001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#roma001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
@@ -448,11 +448,11 @@
 			
 	$('#spy001,#spy002,#spy003').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#spy001,#spy002,#spy003').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#spy001,#spy002,#spy003').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#spy001,#spy002,#spy003').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#spy001,#spy002,#spy003').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		}else if($('#spy001,#spy002,#spy003').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#spy001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#spy001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
@@ -464,11 +464,11 @@
 			
 	$('#heat001,#heat002,#heat003').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#heat001,#heat002,#heat003').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#heat001,#heat002,#heat003').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#heat001,#heat002,#heat003').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#heat001,#heat002,#heat003').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		}else if($('#heat001,#heat002,#heat003').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#heat001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#heat001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
@@ -480,11 +480,11 @@
 	
 	$('#jyn001,#jyn002,#jyn003').click(function() {
 	
-		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+		if($('#jyn001,#jyn002,#jyn003').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
 			$('#jyn001,#jyn002,#jyn003').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+		}else if($('#jyn001,#jyn002,#jyn003').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#jyn001,#jyn002,#jyn003').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+		}else if($('#jyn001,#jyn002,#jyn003').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#jyn001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#jyn001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
