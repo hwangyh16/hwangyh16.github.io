@@ -56,8 +56,6 @@ html {
 
 img,
 video {
-	height: auto;
-	max-width: 100%;
 }
 
 iframe {
@@ -134,7 +132,9 @@ p{
 	padding: 1%;
 }
 
-img{
+.imgsize{
+	height: auto;
+	max-width: 100%;
 	opacity:0.13;
 	cursor:pointer;
 }
