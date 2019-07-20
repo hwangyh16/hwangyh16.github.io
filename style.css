@@ -159,6 +159,10 @@ p{
 	z-index:-2;
 }
 
+#infoicon{
+	opacity:1 !important;
+}
+
 @media screen and (min-width: 300px){
 	.contents li{
 		width:33%;
