@@ -238,102 +238,22 @@
 		}
 	});
 	
-	$('#furiosa001').click(function() {
+	$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').click(function() {
 	
-		if($("#furiosa001").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
-			$('#furiosa001').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($("#furiosa001").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
-			$('#furiosa001').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($("#furiosa001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(#furiosa001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
-			$('#furiosa001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
+		if($(this).hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+			$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
+		}else if($(this).hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+			$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
+		}else if($(this).hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+			$('li:has(this)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
+			$(this).removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
 		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(#furiosa001)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
+			$('li:has(this)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
 		}else{ //이 모든 경우가 아니고 처음 클릭한다면
-			$('#furiosa001').addClass('clicked1'); //이미지에 clicked1을 추가한다.
+			$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked1'); //이미지에 clicked1을 추가한다.
 		}
 	});
 
-	$('#furiosa002').click(function() {
-	
-		if($("#furiosa002").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
-			$('#furiosa002').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($("#furiosa002").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
-			$('#furiosa002').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($("#furiosa002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(#furiosa002)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
-			$('#furiosa002').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
-		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(#furiosa002)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
-		}else{ //이 모든 경우가 아니고 처음 클릭한다면
-			$('#furiosa002').addClass('clicked1'); //이미지에 clicked1을 추가한다.
-		}
-	});
-	
-	$('#furiosa003').click(function() {
-	
-		if($("#furiosa003").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
-			$('#furiosa003').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($("#furiosa003").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
-			$('#furiosa003').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($("#furiosa003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(#furiosa003)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
-			$('#furiosa003').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
-		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(#furiosa003)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
-		}else{ //이 모든 경우가 아니고 처음 클릭한다면
-			$('#furiosa003').addClass('clicked1'); //이미지에 clicked1을 추가한다.
-		}
-	});
-	
-	$('#furiosa004').click(function() {
-	
-		if($("#furiosa004").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
-			$('#furiosa004').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($("#furiosa004").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
-			$('#furiosa004').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($("#furiosa004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(#furiosa004)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
-			$('#furiosa004').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
-		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(#furiosa004)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
-		}else{ //이 모든 경우가 아니고 처음 클릭한다면
-			$('#furiosa004').addClass('clicked1'); //이미지에 clicked1을 추가한다.
-		}
-	});
-	
-	$('#furiosa005').click(function() {
-	
-		if($("#furiosa005").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
-			$('#furiosa005').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($("#furiosa005").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
-			$('#furiosa005').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($("#furiosa005").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(#furiosa005)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
-			$('#furiosa005').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
-		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(#furiosa005)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
-		}else{ //이 모든 경우가 아니고 처음 클릭한다면
-			$('#furiosa005').addClass('clicked1'); //이미지에 clicked1을 추가한다.
-		}
-	});
-	
-	$('#furiosa006').click(function() {
-	
-		if($("#furiosa006").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
-			$('#furiosa006').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($("#furiosa006").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
-			$('#furiosa006').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($("#furiosa006").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(#furiosa006)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
-			$('#furiosa006').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
-		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(#furiosa006)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
-		}else{ //이 모든 경우가 아니고 처음 클릭한다면
-			$('#furiosa006').addClass('clicked1'); //이미지에 clicked1을 추가한다.
-		}
-	});
-	
 	$('#abby001').click(function() {
 	
 		if($("#abby001").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
