@@ -186,9 +186,3 @@ p{
 		width: 16.5% ;
 	}
 }
-
-@media screen and (min-width: 1500px){
-	.contents li{
-		width: 12.5% ;
-	}
-}
