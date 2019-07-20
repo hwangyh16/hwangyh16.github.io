@@ -125,7 +125,7 @@
 			$('#a2').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
 			$('#a3,#a9,#a10').addClass('clicked1');
 		}else if($("#a2").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
-			$('#a1').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
+			$('#a2').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
 		}else if($("#a2").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
 			$('li:has(#a2)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#a2').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
