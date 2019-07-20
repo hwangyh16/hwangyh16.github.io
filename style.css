@@ -119,6 +119,7 @@ p{
 	width: 40px;
 	height: 40px;
 
+	z-index: 400 !important;
 	cursor:pointer;
 }
 
