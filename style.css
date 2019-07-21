@@ -99,12 +99,14 @@ img{
 	z-index:500;
 }
 
-h1,
 p{ /*작업제목, 작업설명*/
-	font-size: 32px;
 	font-family: 'Noto Sans KR', sans-serif;
-	line-height:200%;
 	color: #f0c330;
+}
+
+#powersearch{
+	font-size: 25px;
+	padding-left: 20px;
 }
 
 .topbar{
