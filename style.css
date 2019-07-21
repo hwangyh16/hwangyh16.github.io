@@ -100,7 +100,7 @@ img{
 }
 
 .topbar{ /*상단바*/
-	position: relative;
+	position: fixed;
 	top: 0;
 	left:0;
 	
