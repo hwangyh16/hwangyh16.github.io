@@ -188,6 +188,6 @@ p{ /*작업제목, 작업설명*/
 
 @media screen and (min-width: 1200px){
 	.contents li{
-		width: 16.5% ;
+		width: 20% ;
 	}
 }
