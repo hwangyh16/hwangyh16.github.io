@@ -162,10 +162,12 @@ p{ /*작업제목, 작업설명*/
 }
 
 .zoomin{
+	opacity: 1;
 	cursor: zoom-in;
 }
 
 .zoomout{
+	opacity: 1;
 	cursor: zoom-out;
 }
 
