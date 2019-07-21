@@ -79,6 +79,13 @@ body{
 	background-color: black;
 }
 
+img{
+	height: auto;
+	max-width: 100%;
+	opacity:0.13;
+	cursor:pointer;
+}
+
 .info{
 	display: none;
 }
@@ -133,13 +140,6 @@ p{ /*작업제목, 작업설명*/
   	align-items: flex-end;
   	position: relative;
 	padding: 1%;
-}
-
-img{
-	height: auto;
-	max-width: 100%;
-	opacity:0.13;
-	cursor:pointer;
 }
 
 .clicked1{
