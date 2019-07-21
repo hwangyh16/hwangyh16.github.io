@@ -174,19 +174,20 @@
 		$('.info').hide();
 	});
 
-	if($("#san001").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
-			$('#san001').addClass('clicked2').removeClass('clicked1');
-		}else if($("#san001").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
-			$('#san001').addClass('zoomin').removeClass('clicked2'); 
-		}else if($("#san001").hasClass("zoomin")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(#san001)').addClass('bigger');
-			$('#san001').removeClass('zoomin').addClass('zoomout');
-		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(#san001)').removeClass('bigger');
-			$('#san001').removeClass('zoomout');
-		}else{ //이 모든 경우가 아니고 처음 클릭한다면
-			$('#san001').addClass('clicked1');
-		}
+	$('#san001').click(function() {
+		if($("#san001").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+				$('#san001').addClass('clicked2').removeClass('clicked1');
+			}else if($("#san001").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+				$('#san001').addClass('zoomin').removeClass('clicked2'); 
+			}else if($("#san001").hasClass("zoomin")==true){ //만약 이미지를 네 번 클릭 했을 때
+				$('li:has(#san001)').addClass('bigger');
+				$('#san001').removeClass('zoomin').addClass('zoomout');
+			}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+				$('li:has(#san001)').removeClass('bigger');
+				$('#san001').removeClass('zoomout');
+			}else{ //이 모든 경우가 아니고 처음 클릭한다면
+				$('#san001').addClass('clicked1');
+			}
 	});
 	
 	$('#san002').click(function() {
