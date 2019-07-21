@@ -99,17 +99,7 @@ img{
 	z-index:500;
 }
 
-p{ /*작업제목, 작업설명*/
-	font-family: 'Noto Sans KR', sans-serif;
-	color: #f0c330;
-}
-
-#powersearch{
-	font-size: 25px;
-	padding-left: 20px;
-}
-
-.topbar{
+.topbar{ /*상단바*/
 	position: relative;
 	top: 0;
 	left:0;
@@ -119,7 +109,18 @@ p{ /*작업제목, 작업설명*/
 	
 }
 
-#infobutton{
+p{ /*작업제목, 작업설명*/
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #f0c330;
+}
+
+#powersearch{ /*작업제목*/
+	font-size: 20px;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+#infobutton{ /*작업설명 나오는 버튼*/
 	position: absolute;
 	top: 10px;
 	right: 20px;
@@ -160,11 +161,6 @@ p{ /*작업제목, 작업설명*/
 
 .bigger{
 	width:33vw !important;
-}
-
-.zoomin{
-	opacity: 1;
-	cursor: zoom-in;
 }
 
 .zoomout{
