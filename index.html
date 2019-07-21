@@ -229,10 +229,7 @@
 		}else if($("#san004").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#san001,#san002,#san003,#san004').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
 		}else if($("#san004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(#san004)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#san004').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
-		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(#san004)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
 		}else{ //이 모든 경우가 아니고 처음 클릭한다면
 			$('#san001,#san002,#san003,#san004').addClass('clicked1'); //이미지에 clicked1을 추가한다.
 		}
@@ -245,10 +242,7 @@
 		}else if($('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
 		}else if($('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(#furiosa001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
-		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(#furiosa001)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
 		}else{ //이 모든 경우가 아니고 처음 클릭한다면
 			$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked1'); //이미지에 clicked1을 추가한다.
 		}
@@ -261,10 +255,7 @@
 		}else if($('#abby001,#abby002').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
 			$('#abby001,#abby002').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
 		}else if($('#abby001,#abby002').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(#abby001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
 			$('#abby001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
-		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(#abby001)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
 		}else{ //이 모든 경우가 아니고 처음 클릭한다면
 			$('#abby001,#abby002').addClass('clicked1'); //이미지에 clicked1을 추가한다.
 		}
