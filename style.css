@@ -101,7 +101,6 @@ img{
 
 h1,
 p{ /*작업제목, 작업설명*/
-	padding: 30px;
 	font-size: 32px;
 	font-family: 'Noto Sans KR', sans-serif;
 	line-height:200%;
