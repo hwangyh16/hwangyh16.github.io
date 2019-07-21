@@ -88,15 +88,17 @@ img{
 
 .info{
 	display: none;
-}
-
-.infolayer{
-	position: fixed;
 	display: flex;
 	justify-content: center;
 	align-items:center;
 	width: 100%;
 	height: 100%;
+}
+
+.infolayer{
+	position: fixed;
+	display: flex;
+	flex-wrap: wrap;
 	z-index:500;
 }
 
@@ -104,7 +106,6 @@ img{
 	position: fixed;
 	top: 0;
 	left:0;
-	
 	width: 100%;
 	height: 50px;
 }
