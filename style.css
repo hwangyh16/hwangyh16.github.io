@@ -106,11 +106,11 @@ img{
 	
 	width: 100%;
 	height: 50px;
-	
 }
 
-p{ /*작업제목, 작업설명이 포함되어있음*/
+p{ /*작업제목, 설명이 포함되어있음*/
 	font-family: 'Noto Sans KR', sans-serif;
+	color: white;
 
 }
 
@@ -119,23 +119,19 @@ p{ /*작업제목, 작업설명이 포함되어있음*/
 	padding-top: 10px;
 	padding-left: 20px;
 	
-	color: white;
+
 }
 
-#about{
+#about{ /*설명*/
 	font-size: 15px;
 	padding-top: 10px;
 	padding-left: 20px;
-	
-	color: white;
 }
 
-#infobutton{ /*작업설명 나오는 버튼*/
+#infobutton{ /*클릭하면 작업제목과 설명이 나오는 버튼*/
 	position: absolute;
 	top: 10px;
 	right: 20px;
-	
-	color: #f0c330;
 	
 	width: 35px !important;
 	height: 35px !important;
