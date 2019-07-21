@@ -94,12 +94,8 @@ body{
 	z-index:500;
 }
 
-.background{
-	background-color: black;
-}
-
 h1,
-p{
+p{ /*작업제목, 작업설명*/
 	padding: 30px;
 	font-size: 32px;
 	font-family: 'Noto Sans KR', sans-serif;
@@ -116,12 +112,12 @@ p{
 }
 
 #infoicon{
-	position: relative;
+	position: absolute;
 	right: 10px;
 	
 	opacity:1 !important;
-	width: 40px !important;
-	height: 40px !important;
+	width: 20px !important;
+	height: 20px !important;
 }
 
 .contents { 
@@ -139,7 +135,7 @@ p{
 	padding: 1%;
 }
 
-.imgsize{
+img{
 	height: auto;
 	max-width: 100%;
 	opacity:0.13;
