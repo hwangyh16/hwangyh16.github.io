@@ -21,7 +21,7 @@
 </div>
 
 <div class="topbar">
-   <p id="powersearch">Powersearch: Strong Female Characters</p>
+   <p id="powersearch">파워검색: 강한 여성 캐릭터들</p>
    <img id="infobutton" src="hwangyh16.github.io/informationicon.png">
 </div>
 
@@ -237,78 +237,182 @@
 			}
 	});
 	
-	$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').click(function() {
-	
-		if($('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
-			$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
-			$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
-		}else{ //이 모든 경우가 아니고 처음 클릭한다면
-			$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked1'); //이미지에 clicked1을 추가한다.
-		}
-	});
-
-	$('#abby001,#abby002').click(function() {
-	
-		if($('#abby001,#abby002').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
-			$('#abby001,#abby002').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($('#abby001,#abby002').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
-			$('#abby001,#abby002').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($('#abby001,#abby002').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('#abby001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
-		}else{ //이 모든 경우가 아니고 처음 클릭한다면
-			$('#abby001,#abby002').addClass('clicked1'); //이미지에 clicked1을 추가한다.
-		}
+	$('#furiosa001').click(function() {
+		if($("#furiosa001").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked2').removeClass('clicked1');
+			}else if($("#furiosa001").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked3').removeClass('clicked2'); 
+			}else if($("#furiosa001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+				$('li:has(#furiosa001)').addClass('bigger');
+				$('#furiosa001').removeClass('clicked3').addClass('zoomout');
+			}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+				$('li:has(#furiosa001)').removeClass('bigger');
+				$('#furiosa001').removeClass('zoomout').addClass('clicked3');
+			}else{ //이 모든 경우가 아니고 처음 클릭한다면
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked1');
+			}
 	});
 	
-	$('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').click(function() {
+	$('#furiosa002').click(function() {
+		if($("#furiosa002").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked2').removeClass('clicked1');
+			}else if($("#furiosa002").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked3').removeClass('clicked2'); 
+			}else if($("#furiosa002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+				$('li:has(#furiosa002)').addClass('bigger');
+				$('#furiosa002').removeClass('clicked3').addClass('zoomout');
+			}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+				$('li:has(#furiosa002)').removeClass('bigger');
+				$('#furiosa002').removeClass('zoomout').addClass('clicked3');
+			}else{ //이 모든 경우가 아니고 처음 클릭한다면
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked1');
+			}
+	});
 	
-		if($('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
-			$('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
-			$('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(#katniss001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
-			$('#katniss001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
-		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(#katniss001)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
-		}else{ //이 모든 경우가 아니고 처음 클릭한다면
-			$('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').addClass('clicked1'); //이미지에 clicked1을 추가한다.
-		}
+	$('#furiosa003').click(function() {
+		if($("#furiosa003").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked2').removeClass('clicked1');
+			}else if($("#furiosa003").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked3').removeClass('clicked2'); 
+			}else if($("#furiosa003").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+				$('li:has(#furiosa003)').addClass('bigger');
+				$('#furiosa003').removeClass('clicked3').addClass('zoomout');
+			}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+				$('li:has(#furiosa003)').removeClass('bigger');
+				$('#furiosa003').removeClass('zoomout').addClass('clicked3');
+			}else{ //이 모든 경우가 아니고 처음 클릭한다면
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked1');
+			}
+	});
+	
+	$('#furiosa004').click(function() {
+		if($("#furiosa004").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked2').removeClass('clicked1');
+			}else if($("#furiosa004").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked3').removeClass('clicked2'); 
+			}else if($("#furiosa004").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+				$('li:has(#furiosa004)').addClass('bigger');
+				$('#furiosa004').removeClass('clicked3').addClass('zoomout');
+			}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+				$('li:has(#furiosa004)').removeClass('bigger');
+				$('#furiosa004').removeClass('zoomout').addClass('clicked3');
+			}else{ //이 모든 경우가 아니고 처음 클릭한다면
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked1');
+			}
+	});
+	
+	$('#furiosa005').click(function() {
+		if($("#furiosa005").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked2').removeClass('clicked1');
+			}else if($("#furiosa005").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked3').removeClass('clicked2'); 
+			}else if($("#furiosa005").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+				$('li:has(#furiosa005)').addClass('bigger');
+				$('#furiosa005').removeClass('clicked3').addClass('zoomout');
+			}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+				$('li:has(#furiosa005)').removeClass('bigger');
+				$('#furiosa005').removeClass('zoomout').addClass('clicked3');
+			}else{ //이 모든 경우가 아니고 처음 클릭한다면
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked1');
+			}
+	});
+	
+	$('#furiosa006').click(function() {
+		if($("#furiosa006").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked2').removeClass('clicked1');
+			}else if($("#furiosa006").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked3').removeClass('clicked2'); 
+			}else if($("#furiosa006").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+				$('li:has(#furiosa006)').addClass('bigger');
+				$('#furiosa006').removeClass('clicked3').addClass('zoomout');
+			}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+				$('li:has(#furiosa006)').removeClass('bigger');
+				$('#furiosa006').removeClass('zoomout').addClass('clicked3');
+			}else{ //이 모든 경우가 아니고 처음 클릭한다면
+				$('#furiosa001,#furiosa002,#furiosa003,#furiosa004,#furiosa005,#furiosa006').addClass('clicked1');
+			}
+	});
+	
+	$('#abby001').click(function() {
+		if($("#abby001").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+				$('#abby001,#abby002').addClass('clicked2').removeClass('clicked1');
+			}else if($("#abby001").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+				$('#abby001,#abby002').addClass('clicked3').removeClass('clicked2'); 
+			}else if($("#abby001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+				$('li:has(#abby001)').addClass('bigger');
+				$('#abby001').removeClass('clicked3').addClass('zoomout');
+			}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+				$('li:has(#abby001)').removeClass('bigger');
+				$('#abby001').removeClass('zoomout').addClass('clicked3');
+			}else{ //이 모든 경우가 아니고 처음 클릭한다면
+				$('#abby001,#abby002').addClass('clicked1');
+			}
+	});
+	
+	$('#abby002').click(function() {
+		if($("#abby002").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+				$('#abby001,#abby002').addClass('clicked2').removeClass('clicked1');
+			}else if($("#abby002").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+				$('#abby001,#abby002').addClass('clicked3').removeClass('clicked2'); 
+			}else if($("#abby002").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+				$('li:has(#abby002)').addClass('bigger');
+				$('#abby002').removeClass('clicked3').addClass('zoomout');
+			}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+				$('li:has(#abby002)').removeClass('bigger');
+				$('#abby002').removeClass('zoomout').addClass('clicked3');
+			}else{ //이 모든 경우가 아니고 처음 클릭한다면
+				$('#abby001,#abby002').addClass('clicked1');
+			}
+	});
+	
+	$('#katniss001').click(function() {
+		if($("#katniss001").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+				$('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').addClass('clicked2').removeClass('clicked1');
+			}else if($("#katniss001").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+				$('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').addClass('clicked3').removeClass('clicked2'); 
+			}else if($("#katniss001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+				$('li:has(#katniss001)').addClass('bigger');
+				$('#katniss001').removeClass('clicked3').addClass('zoomout');
+			}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+				$('li:has(#katniss001)').removeClass('bigger');
+				$('#katniss001').removeClass('zoomout').addClass('clicked3');
+			}else{ //이 모든 경우가 아니고 처음 클릭한다면
+				$('#katniss001,#katniss002,#katniss003,#katniss004,#katniss005,#katniss006').addClass('clicked1');
+			}
+	});
+	
+	$('#nausicaa001').click(function() {
+		if($("#nausicaa001").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+				$('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').addClass('clicked2').removeClass('clicked1');
+			}else if($("#nausicaa001").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+				$('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').addClass('clicked3').removeClass('clicked2'); 
+			}else if($("#nausicaa001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+				$('li:has(#nausicaa001)').addClass('bigger');
+				$('#nausicaa001').removeClass('clicked3').addClass('zoomout');
+			}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+				$('li:has(#nausicaa001)').removeClass('bigger');
+				$('#nausicaa001').removeClass('zoomout').addClass('clicked3');
+			}else{ //이 모든 경우가 아니고 처음 클릭한다면
+				$('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').addClass('clicked1');
+			}
+	});
+	
+	$('#wasp001').click(function() {
+		if($("#wasp001").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+				$('#wasp001,#wasp002,#wasp003,#wasp004').addClass('clicked2').removeClass('clicked1');
+			}else if($("#wasp001").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+				$('#wasp001,#wasp002,#wasp003,#wasp004').addClass('clicked3').removeClass('clicked2'); 
+			}else if($("#wasp001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+				$('li:has(#wasp001)').addClass('bigger');
+				$('#wasp001').removeClass('clicked3').addClass('zoomout');
+			}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+				$('li:has(#wasp001)').removeClass('bigger');
+				$('#wasp001').removeClass('zoomout').addClass('clicked3');
+			}else{ //이 모든 경우가 아니고 처음 클릭한다면
+				$('#wasp001,#wasp002,#wasp003,#wasp004').addClass('clicked1');
+			}
 	});
 			
-	$('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').click(function() {
-	
-		if($('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
-			$('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
-			$('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(#nausicaa001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
-		}else if($("li:has(#nausicaa001)").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(#nausicaa001)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
-		}else{ //이 모든 경우가 아니고 처음 클릭한다면
-			$('#nausicaa001,#nausicaa002,#nausicaa003,#nausicaa004,#nausicaa005,#nausicaa006,#nausicaa007').addClass('clicked1'); //이미지에 clicked1을 추가한다.
-		}
-	});
-			
-	$('#wasp001,#wasp002,#wasp003,#wasp004').click(function() {
-	
-		if($('#wasp001,#wasp002,#wasp003,#wasp004').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
-			$('#wasp001,#wasp002,#wasp003,#wasp004').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($('#wasp001,#wasp002,#wasp003,#wasp004').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
-			$('#wasp001,#wasp002,#wasp003,#wasp004').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($('#wasp001,#wasp002,#wasp003,#wasp004').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(#wasp001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
-			$('#wasp001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
-		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(#wasp001)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
-		}else{ //이 모든 경우가 아니고 처음 클릭한다면
-			$('#wasp001,#wasp002,#wasp003,#wasp004').addClass('clicked1'); //이미지에 clicked1을 추가한다.
-		}
-	});
 			
 	$('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').click(function() {
 	
