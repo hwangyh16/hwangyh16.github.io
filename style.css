@@ -155,6 +155,7 @@ p{ /*작업제목, 작업설명*/
 
 .clicked3{
 	opacity: 1;
+	cursor: zoom-in;
 }
 
 .bigger{
