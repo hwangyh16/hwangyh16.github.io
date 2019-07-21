@@ -109,21 +109,25 @@ img{
 	
 }
 
-p{ /*작업제목, 작업설명*/
+p{ /*작업제목, 작업설명이 포함되어있음*/
 	font-family: 'Noto Sans KR', sans-serif;
-	color: #f0c330;
+
 }
 
 #powersearch{ /*작업제목*/
 	font-size: 20px;
 	padding-top: 10px;
 	padding-left: 20px;
+	
+	color: white;
 }
 
 #infobutton{ /*작업설명 나오는 버튼*/
 	position: absolute;
 	top: 10px;
 	right: 20px;
+	
+	color: #f0c330;
 	
 	width: 35px !important;
 	height: 35px !important;
