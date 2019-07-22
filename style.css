@@ -139,7 +139,7 @@ p{ /*작업제목, 설명이 포함되어있음*/
 
 .contents { 
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: volumn;
 	font-size:0;
 	padding:1%;
 }
