@@ -411,37 +411,36 @@
 			}
 	});
 			
-			
-	$('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').click(function() {
-	
-		if($('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
-			$('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
-			$('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(#marvel001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
-			$('#marvel001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
-		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(#marvel001)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
-		}else{ //이 모든 경우가 아니고 처음 클릭한다면
-			$('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').addClass('clicked1'); //이미지에 clicked1을 추가한다.
-		}
+	$('#marvel001').click(function() {
+		if($("#marvel001").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+				$('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').addClass('clicked2').removeClass('clicked1');
+			}else if($("#marvel001").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+				$('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').addClass('clicked3').removeClass('clicked2'); 
+			}else if($("#marvel001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+				$('li:has(#marvel001)').addClass('bigger');
+				$('#marvel001').removeClass('clicked3').addClass('zoomout');
+			}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+				$('li:has(#marvel001)').removeClass('bigger');
+				$('#marvel001').removeClass('zoomout').addClass('clicked3');
+			}else{ //이 모든 경우가 아니고 처음 클릭한다면
+				$('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').addClass('clicked1');
+			}
 	});
-			
-	$('#eleven001,#eleven002,#eleven003,#eleven004').click(function() {
 	
-		if($('#eleven001,#eleven002,#eleven003,#eleven004').hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
-			$('#eleven001,#eleven002,#eleven003,#eleven004').addClass('clicked2').removeClass('clicked1'); //.clicked2를 추가하고 .clicked1을 제거한다
-		}else if($('#eleven001,#eleven002,#eleven003,#eleven004').hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
-			$('#eleven001,#eleven002,#eleven003,#eleven004').addClass('clicked3').removeClass('clicked2'); //.clicked3을 추가하고 .clicked2를 제거한다
-		}else if($('#eleven001,#eleven002,#eleven003,#eleven004').hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
-			$('li:has(#eleven001)').addClass('bigger');// #a1를 가진 li에 .bigger를 추가한다
-			$('#eleven001').removeClass('clicked3'); // #a1에는 .clicked3을 제거한다.
-		}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
-			$('li:has(#eleven001)').removeClass('bigger'); //li에 .bigger를 제거한다. (즉 원상복귀 시킨다.)
-		}else{ //이 모든 경우가 아니고 처음 클릭한다면
-			$('#eleven001,#eleven002,#eleven003,#eleven004').addClass('clicked1'); //이미지에 clicked1을 추가한다.
-		}
+	$('#eleven001').click(function() {
+		if($("#eleven001").hasClass("clicked1")==true){ //만약 이미지를 두 번 클릭을 했을 때
+				$('#eleven001,#eleven002,#eleven003,#eleven004').addClass('clicked2').removeClass('clicked1');
+			}else if($("#eleven001").hasClass("clicked2")==true){ //만약 이미지를 세 번 클릭 했을 때
+				$('#marvel001,#marvel002,#marvel003,#marvel004,#marvel005').addClass('clicked3').removeClass('clicked2'); 
+			}else if($("#eleven001").hasClass("clicked3")==true){ //만약 이미지를 네 번 클릭 했을 때
+				$('li:has(#eleven001)').addClass('bigger');
+				$('#eleven001').removeClass('clicked3').addClass('zoomout');
+			}else if($("li").hasClass("bigger")==true){ //만약 li에 .bigger를 가질때
+				$('li:has(#eleven001)').removeClass('bigger');
+				$('#eleven001').removeClass('zoomout').addClass('clicked3');
+			}else{ //이 모든 경우가 아니고 처음 클릭한다면
+				$('#eleven001,#eleven002,#eleven003,#eleven004').addClass('clicked1');
+			}
 	});
 			
 	$('#helen001,#helen002,#helen003').click(function() {
