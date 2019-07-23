@@ -134,6 +134,7 @@ p{ /*작업제목, 설명이 포함되어있음*/
 	width: 35px !important;
 	height: 35px !important;
 	opacity:1 !important;
+	z-index:5000 !important;
 }
 
 .contents { 
