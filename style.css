@@ -96,8 +96,7 @@ img{
 	position: fixed;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items:center;
+
 	z-index:500;
 }
 
@@ -117,12 +116,18 @@ p{ /*작업제목, 설명이 포함되어있음*/
 }
 
 #powersearch{ /*작업제목*/
+	display: flex;
+	justify-content: center;
+	align-items:center;
 	font-size: 20px;
 	padding-top: 10px;
 	padding-left: 20px;
 }
 
 #about{ /*설명*/
+	display: flex;
+	justify-content: center;
+	align-items:center;
 	font-size: 15px;
 	padding-top: 10px;
 	padding-left: 20px;
